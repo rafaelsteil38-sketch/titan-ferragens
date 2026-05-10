@@ -509,3 +509,101 @@ BOTÃO CONTATO
 
     box-shadow: 0 14px 28px rgba(245, 158, 11, 0.35);
 }
+
+/* =========================================================
+RESPONSIVIDADE MOBILE
+========================================================= */
+
+@media (max-width: 768px){
+
+    /* HEADER */
+    .header{
+        flex-direction: column;
+        gap: 15px;
+
+        padding: 20px;
+        text-align: center;
+    }
+
+    .navbar{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* HERO */
+    .hero{
+        min-height: auto;
+        padding: 100px 20px;
+    }
+
+    .hero h1{
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .hero p{
+        font-size: 15px;
+    }
+
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .secondary-btn{
+        margin-left: 0;
+    }
+
+    /* SOBRE */
+    .sobre{
+        grid-template-columns: 1fr;
+    }
+
+    /* CONTATO */
+    .contact-container{
+        grid-template-columns: 1fr;
+    }
+
+    /* PRODUTOS */
+    .produtos{
+        grid-template-columns: 1fr !important;
+        padding: 15px !important;
+    }
+
+    /* ADMIN */
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+    /* TITULOS */
+    .section-title h1,
+    .section-title h2{
+        font-size: 28px;
+    }
+
+    /* TEXTO */
+    .texto h2{
+        font-size: 24px;
+    }
+
+    .texto p{
+        font-size: 15px;
+    }
+
+}
+
+/* =========================================================
+ANTI SCROLL HORIZONTAL
+========================================================= */
+
+html,
+body{
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
