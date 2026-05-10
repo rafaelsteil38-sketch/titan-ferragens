@@ -1,0 +1,55 @@
+<!-- admin.html -->
+
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<section class="admin">
+
+    <h1>Painel Administrativo</h1>
+
+    <form method="POST">
+
+        <input type="text" name="nome" placeholder="Nome do produto" required>
+
+        <input type="text" name="preco" placeholder="Preço" required>
+
+        <input type="text" name="imagem" placeholder="URL da imagem" required>
+
+        <textarea
+            name="descricao"
+            placeholder="Descrição"
+            required
+        ></textarea>
+
+        <button type="submit">
+            Adicionar produto
+        </button>
+
+    </form>
+
+    <div class="cards">
+
+        {% for produto in produtos %}
+
+        <div class="card">
+
+            <img src="{{ produto.imagem }}">
+
+            <h3>{{ produto.nome }}</h3>
+
+            <p>{{ produto.preco }}</p>
+
+            <a href="/deletar/{{ produto.id }}">
+                Excluir
+            </a>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+{% endblock %}

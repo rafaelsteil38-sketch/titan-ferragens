@@ -1,0 +1,57 @@
+<!-- layout.html -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Titan Ferragens</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        Titan Ferragens
+    </div>
+
+    <nav class="navbar">
+        <a href="/">Início</a>
+        <a href="/produtos">Produtos</a>
+        <a href="/sobre">Sobre</a>
+        <a href="/contato">Contato</a>
+    </nav>
+
+</header>
+
+{% block content %}{% endblock %}
+
+<footer class="footer">
+
+    <h3>Titan Ferragens</h3>
+
+    <p>
+        Ferragens, ferramentas e materiais para sua obra.
+    </p>
+
+    <p>
+        Gravataí - RS
+    </p>
+
+</footer>
+
+<a href="https://wa.me/5551999999999" target="_blank" class="whatsapp-button">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>s

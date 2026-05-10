@@ -1,0 +1,64 @@
+<!-- contato.html -->
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="section-container">
+
+    <div class="section-title">
+
+        <span>Contato</span>
+
+        <h1>Fale Conosco</h1>
+
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h2>Estamos aqui para te ajudar</h2>
+
+            <p>
+                Entre em contato para orçamento ou dúvidas sobre produtos.
+            </p>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                Gravataí - RS
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                (51) 99999-9999
+            </div>
+
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                contato@titanferragens.com
+            </div>
+
+        </div>
+
+        <form class="contact-form">
+
+            <input type="text" placeholder="Nome" required>
+
+            <input type="email" placeholder="Email" required>
+
+            <input type="text" placeholder="Telefone">
+
+            <textarea placeholder="Mensagem" required></textarea>
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,111 @@
+<!-- produtos.html -->
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="produtos">
+
+  <div class="produto">
+
+    <img src="{{ url_for('static', filename='img/furadeira.jpg') }}" alt="Furadeira">
+
+    <div class="info">
+
+      <h3>Furadeira Profissional</h3>
+
+      <p>
+        Alta potência, ideal para uso doméstico e profissional.
+      </p>
+
+      <span class="preco">
+        R$ 249,90
+      </span>
+
+    </div>
+
+  </div>
+
+  <div class="produto">
+
+    <img src="{{ url_for('static', filename='img/torneira.jpg') }}" alt="Torneira">
+
+    <div class="info">
+
+      <h3>Torneira Cromada</h3>
+
+      <p>
+        Modelo moderno, resistente e de fácil instalação.
+      </p>
+
+      <span class="preco">
+        R$ 79,90
+      </span>
+
+    </div>
+
+  </div>
+
+  <div class="produto">
+
+    <img src="{{ url_for('static', filename='img/ferramentas.jpg') }}" alt="Kit de Ferramentas">
+
+    <div class="info">
+
+      <h3>Kit de Ferramentas</h3>
+
+      <p>
+        Conjunto completo para reparos e manutenção geral.
+      </p>
+
+      <span class="preco">
+        R$ 189,90
+      </span>
+
+    </div>
+
+  </div>
+
+  <div class="produto">
+
+    <img src="{{ url_for('static', filename='img/eletrica.jpg') }}" alt="Materiais elétricos">
+
+    <div class="info">
+
+      <h3>Materiais Elétricos</h3>
+
+      <p>
+        Cabos, conectores e acessórios para instalações.
+      </p>
+
+      <span class="preco">
+        R$ 59,90
+      </span>
+
+    </div>
+
+  </div>
+
+  <div class="produto">
+
+    <img src="{{ url_for('static', filename='img/hidraulica.jpg') }}" alt="Hidráulica">
+
+    <div class="info">
+
+      <h3>Kit Hidráulico</h3>
+
+      <p>
+        Tubos e conexões para instalações residenciais.
+      </p>
+
+      <span class="preco">
+        R$ 99,90
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+{% endblock %}

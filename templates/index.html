@@ -1,0 +1,96 @@
+<!-- index.html -->
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="hero-badge">
+            Qualidade e confiança em Gravataí
+        </span>
+
+        <h1>
+            Tudo para sua obra em um só lugar
+        </h1>
+
+        <p>
+            Ferragens, ferramentas, hidráulica,
+            elétrica e materiais de construção.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="/produtos" class="primary-btn">
+                Ver Produtos
+            </a>
+
+            <a href="/contato" class="secondary-btn">
+                Solicitar Orçamento
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section-container">
+
+    <div class="section-title">
+
+        <span>Categorias</span>
+
+        <h2>
+            Produtos Mais Procurados
+        </h2>
+
+    </div>
+
+    <div class="category-grid">
+
+        <div class="category-card">
+
+            <img
+                src="{{ url_for('static', filename='img/furadeira.jpg') }}"
+            >
+
+            <div class="category-content">
+                <h3>Ferramentas</h3>
+            </div>
+
+        </div>
+
+        <div class="category-card">
+
+            <img
+                src="{{ url_for('static', filename='img/eletrica.jpg') }}"
+            >
+
+            <div class="category-content">
+                <h3>Elétrica</h3>
+            </div>
+
+        </div>
+
+        <div class="category-card">
+
+            <img
+                src="{{ url_for('static', filename='img/hidraulica.jpg') }}"
+            >
+
+            <div class="category-content">
+                <h3>Hidráulica</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
